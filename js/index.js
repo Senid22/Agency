@@ -58,5 +58,5 @@ window.addEventListener('load', function() {
         size: new google.maps.Size(60,30.26),
         url: 'http://image.flaticon.com/icons/svg/252/252025.svg'
       }
-    })
+    });
   });
