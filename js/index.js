@@ -49,14 +49,8 @@ window.addEventListener('load', function() {
       center: new google.maps.LatLng(43.99240229999999, 18.181871699999988)
     });
 
-    // See Github for class https://github.com/defvayne23/SVGMarker
-    var marker = new SVGMarker({
-      map: map,
-      position: new google.maps.LatLng(43.99240229999999, 18.181871699999988),
-      icon: {
-        anchor: new google.maps.Point(30, 30.26),
-        size: new google.maps.Size(60,30.26),
-        url: 'http://image.flaticon.com/icons/svg/252/252025.svg'
-      }
-    });
+    var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
   });
