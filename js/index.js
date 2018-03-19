@@ -56,7 +56,7 @@ window.addEventListener('load', function() {
       icon: {
         anchor: new google.maps.Point(30, 30.26),
         size: new google.maps.Size(60,30.26),
-        url: 'https://senid22.github.io/Agency/img/location-pin.png'
+        url: 'http://image.flaticon.com/icons/svg/252/252025.svg'
       }
     })
   });
