@@ -1,0 +1,249 @@
+.best-section {
+    width: 100%;
+    display: flex;
+    height: auto;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    
+    .best-left {
+        width: 50%;
+        padding: 100px 60px 120px 100px;
+        background-image: url(../img/sleft1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .best-right {
+        width: 50%;
+        padding: 100px 100px 120px 60px;
+        background-image: url(../img/sright.jpg);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-size: cover;
+    }
+    h2 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 26px;
+        font-weight: 300;
+        color: $wh;
+        margin: 0;
+        margin-bottom: 30px;
+        
+        strong {
+            font-weight: 600;
+        }
+    }
+    p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        color: $wh;
+        line-height: 25px;
+        font-weight: 200;
+        margin-bottom: 30px;
+    }
+    a {
+        transition: 0.3s;
+
+        .cta-button {
+            padding: 10px 30px;
+            color: $wh;
+            @include gradient;
+            border: none;
+            border-radius: 40px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 13px;
+            font-weight: 300;
+            transition: 0.3s;
+
+                &:hover {
+                    @include gradient-hover;
+                    transition: 0.3s;
+            }
+        }
+    }
+}
+
+/** WHAT WE DO SECTION **/
+
+.job-section {
+    width: 1140px;
+    height: auto;
+    margin: 0 auto;
+    
+    h2 {
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        padding: 80px 0;
+        font-family: 'Poppins', sans-serif;
+        font-size: 30px;
+        color: $bl;
+        font-weight: 600;
+    }
+    
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        
+        li {
+            width: 50%;
+            margin-bottom: 40px;
+            height: auto;
+            display: flex;
+            align-items: center;
+            vertical-align: middle;
+            justify-content: flex-start;
+            
+            .item-image {
+                
+            }
+            
+            .item-text {
+                margin-left: 20px;
+                
+                a {
+                    cursor: pointer;
+                    
+                    h3 {
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 24px;
+                        font-weight: 600;
+                        color: $bl;
+                        margin-top: 0;
+                        transition: 0.3s;
+                        
+                        &:hover {
+                            color: $gradr;
+                        }
+                    }
+                }
+                p {
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 14px;
+                    color: $c;
+                    line-height: 25px;
+                }
+            }
+        }
+    }
+    .sec-two-button {
+        padding: 40px 0 100px 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+        a {
+            .cta-button {
+                padding: 10px 30px;
+                color: $wh;
+                @include gradient;
+                border: none;
+                border-radius: 40px;
+                font-family: 'Poppins', sans-serif;
+                font-size: 14px;
+                font-weight: 300;
+                transition: 0.3s;
+
+                    &:hover {
+                    @include gradient-hover;
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+}
+
+/*----------- SLIDER -----------*/
+@import "slider";
+
+/*----------- ABOUT US -----------*/
+.about-section {
+    margin: 0 auto;
+    width: 100%;
+    background-image: url(../img/about-us.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+    text-align: center;
+    
+    h2 {
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        padding: 120px 0 20px 0;
+        font-family: 'Poppins', sans-serif;
+        font-size: 30px;
+        color: $wh;
+        font-weight: 600;
+    }
+    
+    p {
+        width: 720px;
+        margin: 0 auto;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        font-weight: 200;
+        color: $d;
+    }
+    
+    ul {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 100px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        li {
+            display: inline-block;
+            width: 25%;
+            height: auto;
+            
+            h4 {
+                margin: 20px 0 10px 0;
+                font-size: 18px;
+                font-family: 'Poppins', sans-serif;
+                color: $wh;
+                font-weight: 600;
+            }
+            
+            p {
+                width: auto;
+                font-size: 14px;
+                font-family: 'Poppins', sans-serif;
+                color: $d;
+                font-weight: 200;
+            }
+        }
+    }
+    .sec-about-button {
+        padding: 0px 0 80px 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+        a {
+            .cta-button {
+                padding: 10px 30px;
+                color: $wh;
+                @include gradient;
+                border: none;
+                border-radius: 40px;
+                font-family: 'Poppins', sans-serif;
+                font-size: 14px;
+                font-weight: 300;
+                transition: 0.3s;
+
+                    &:hover {
+                    @include gradient-hover;
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+}

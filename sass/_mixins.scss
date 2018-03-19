@@ -1,0 +1,15 @@
+@mixin gradient {
+    background: $gradr;
+    background: -moz-linear-gradient(left, $gradr 0%, $grady 100%);
+    background: -webkit-linear-gradient(left, $gradr 0%,$grady 100%);
+    background: linear-gradient(to right, $gradr 0%,$grady 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$gradr', endColorstr='$grady',GradientType=1 );
+}
+
+@mixin gradient-hover {
+    background: $gradr;
+    background: -moz-linear-gradient(left, $gradr 100%, $grady 0%);
+    background: -webkit-linear-gradient(left, $gradr 100%,$grady 0%);
+    background: linear-gradient(to right, $gradr 100%,$grady 0%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$gradr', endColorstr='$grady',GradientType=1 );
+}
